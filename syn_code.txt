@@ -1,0 +1,16 @@
+nothing prime():
+	num i <- 5
+	num j <- 5
+	num rows <- 5  
+	num count <- 0  
+	rows <- 2 * rows
+
+	loop(num i <- 1  j <= rows  i <- i + 2):
+		loop(num j <- 1  j <= i  j <- j + 1):
+			when(j <= i/2):
+				count <- count + 1  
+			;
+		;
+		count <- 0  
+	;
+;
